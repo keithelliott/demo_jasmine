@@ -1,0 +1,68 @@
+extends layout
+
+block content
+	.hero-unit
+		h2=title
+		p= caption
+	#main.row
+		.span3
+			ul.nav.nav-tabs.nav-stacked
+				li#setupJasmine.active 
+					a(href="#dropdowns") Setup Jasmine
+				li#suitesAndSpecs 
+					a(href="#dropdowns") Suites and Specs
+				li#spies 
+					a(href="#dropdowns") Spies
+				li#asyncTests 
+					a(href="#dropdowns") Asynchronous Tests
+		#main_content.span8
+			div.row
+				form#geoForm
+					#appendAddressSubmit
+						input#address(type='text', placeholder='enter address', size='16') 
+						span.add-on
+							button#submitAddress.btn(type='submit') Submit
+			div.row
+				#map
+			div.row
+				br
+				form#propDetails
+					div.left
+						.span6
+							div.control-group
+								label.control-label(for='street') Street
+							div.controls
+								input.input-xlarge.uneditable-input#street(type='text')
+							div.control-group
+								label.control-label(for='csz') City, State zip
+						.span6
+							div.controls
+								input.input-xlarge.uneditable-input#csz(type='text')
+							div.control-group
+								label.control-label(for='sf') SqFt
+							div.controls
+								input.input-xlarge.uneditable-input#sf(type='text')
+					div.clear
+					div.left
+						.span6
+							div.control-group
+								label.control-label(for='bdrms') Bedrooms
+							div.controls
+								input.input-xlarge.uneditable-input#bdrms(type='text')
+						.span6
+							div.control-group
+								label.control-label(for='baths') Bathrooms
+							div.controls
+								input.input-xlarge.uneditable-input#baths(type='text')
+					div.clear
+					div.left
+						.span6
+							div.control-group
+								label.control-label(for='totrms') Total Rms
+							div.controls
+								input.input-xlarge.uneditable-input#totrms(type='text')
+						.span6
+							div.control-group
+								label.control-label(for='lotsize') Lot Size
+							div.controls
+								input.input-xlarge.uneditable-input#lotsize(type='text')
