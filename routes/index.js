@@ -1,7 +1,7 @@
 var geocoder = require('geocoder'),
 	xmlconverter = require('xml2js'),
 	parser = new xmlconverter.Parser(),
-	http = require("http")
+	http = require("http"),
 	ZWSID = 'X1-ZWz1decm08q58r_4g4th';
 	
 exports.index = function(req, res){
